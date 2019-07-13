@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "firstreact-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/firstreact/FirstreactWebPart.js",
+          "manifest": "./src/webparts/firstreact/FirstreactWebPart.manifest.json"
+        }
+      ]
+    },
+    "charts-react-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/chartsReact/ChartsReactWebPart.js",
+          "manifest": "./src/webparts/chartsReact/ChartsReactWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FirstreactWebPartStrings": "lib/webparts/firstreact/loc/{locale}.js",
+    "ChartsReactWebPartStrings": "lib/webparts/chartsReact/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
